@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<style>
+  body { font: 13px "Segoe UI", system-ui, sans-serif; width: 380px; margin: 0; color: #202124; }
+  header { background: linear-gradient(#3d8bfd, #1a5fd1); color: #fff; padding: 10px 12px; font-weight: 600; }
+  #status { font-weight: 400; font-size: 12px; opacity: .9; margin-top: 2px; }
+  ul { list-style: none; margin: 0; padding: 4px 0; max-height: 360px; overflow: auto; }
+  li { display: flex; align-items: center; gap: 8px; padding: 7px 12px; border-bottom: 1px solid #eee; }
+  li span { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  li b { color: #1a5fd1; font-size: 11px; min-width: 40px; }
+  button { background: #1a73e8; color: #fff; border: 0; border-radius: 4px; padding: 5px 10px; cursor: pointer; }
+  button:hover { background: #1558b0; }
+  .empty { padding: 12px; color: #5f6368; }
+  footer { padding: 8px 12px; }
+  footer button { width: 100%; padding: 8px; }
+</style>
+</head>
+<body>
+  <header>PyIDM<div id="status">Memeriksa aplikasi…</div></header>
+  <ul id="list"></ul>
+  <footer><button id="page">Download halaman ini via yt-dlp</button></footer>
+  <script src="popup.js"></script>
+</body>
+</html>
